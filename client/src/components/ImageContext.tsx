@@ -15,7 +15,7 @@ interface ImageContextType {
   contrast: number; // New state for contrast
   rotation: number;
   blur: number;
-  tint: string;
+  tint: string | null;
   flop: boolean;
   flip: boolean;
   grayscale: boolean;
@@ -52,7 +52,7 @@ export const ImageProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const [contrast, setContrast] = useState<number>(1); // New state for contrast
   const [rotation, setRotation] = useState<number>(0);
   const [blur, setBlur] = useState<number>(0);
-  const [tint, setTint] = useState<string>('#000000');; // Default to white tint
+  const [tint, setTint] = useState<string>(null);; // Default to white tint
   const [flop, setFlop] = useState<boolean>(false);
   const [flip, setFlip] = useState<boolean>(false);
   const [grayscale, setGrayscale] = useState<boolean>(false);

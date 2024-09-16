@@ -75,8 +75,6 @@ const ImageControls: React.FC = () => {
         sharpen,
         threshold,
         crop,
-        width,
-        height,
         format: 'jpeg',
       });
     }, 300),
